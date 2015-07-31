@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Clipboard Wizard</Name>
+  <Author>Atlas Systems, Inc.</Author>
+  <Version>1.0.0</Version>
+  <Active>True</Active>
+  <Type>Addon</Type>
+  <Description>Copies information about an item into the windows clipboard</Description>
+  <Forms>
+    <Form>FormItem</Form>
+  </Forms>
+  <Settings>
+    <Setting name="CopyFormatString" value="{TableField:Item.Title}" type="string">
+      <Description>Defines the format string to copy data into the clipboard.</Description>
+    </Setting>
+  </Settings>
+  <Files>
+    <File>ClipboardWizard.lua</File>	
+  </Files>
+</Configuration>
