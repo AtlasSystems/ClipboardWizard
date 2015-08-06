@@ -32,7 +32,7 @@ function Init()
 
 	if settings.PrimaryFormatString == "{Default}" then
 		if Application.ProductName == "Aeon" then
-			settings.PrimaryFormatString = "{TableField:Transaction.Title}";
+			settings.PrimaryFormatString = "{TableField:Transaction.ItemTitle}";
 		elseif Application.ProductName == "Ares" then
 			settings.PrimaryFormatString = "{TableField:Item.Title}";
 		elseif Application.ProductName == "ILLiad" then
