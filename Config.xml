@@ -7,11 +7,23 @@
   <Type>Addon</Type>
   <Description>Copies information about an item into the windows clipboard</Description>
   <Forms>
+    <!--Ares-->
     <Form>FormItem</Form>
+    <!--Aeon and ILLiad-->
+    <Form>FormRequest</Form>
   </Forms>
   <Settings>
-    <Setting name="CopyFormatString" value="{TableField:Item.Title}" type="string">
-      <Description>Defines the format string to copy data into the clipboard.</Description>
+    <Setting name="ComparatorFormat" value="{Default}" type="string">
+      <Description>Defines the format string to retrieve data to determine if the PrimaryFormatString or SecondaryFormatString is used to copy data into the clipboard. A value of {Default} will set it based on the current product.</Description>
+    </Setting>
+    <Setting name="ComparatorValue" value="{Default}" type="string">
+      <Description>Compared to the output of ComparatorFormat. If the value matches then PrimaryFormatString is used; otherwise, SecondaryFormatString is used. A value of {Default} will set it based on the current product.</Description>
+    </Setting>
+    <Setting name="PrimaryFormatString" value="{Default}" type="string">
+      <Description>Defines the primary format string to copy data into the clipboard. A value of {Default} will set it based on the current product.</Description>
+    </Setting>
+    <Setting name="SecondaryFormatString" value="{Default}" type="string">
+      <Description>Defines the secondary format string to copy data into the clipboard. A value of {Default} will set it based on the current product.</Description>
     </Setting>
   </Settings>
   <Files>
